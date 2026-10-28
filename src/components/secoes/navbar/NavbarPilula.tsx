@@ -76,8 +76,11 @@ export function NavbarPilula({ nome, logo, itens, whatsappHref, telefone, telefo
         role="dialog"
         aria-modal="true"
         aria-label="Menu"
-        hidden={!aberto}
-        className="fixed inset-0 z-[60] overflow-y-auto lg:hidden"
+        aria-hidden={!aberto}
+        inert={!aberto}
+        className={`fixed inset-0 z-[60] overflow-y-auto transition-[opacity,visibility,transform] duration-300 ease-out lg:hidden motion-reduce:transition-none ${
+          aberto ? "visible translate-y-0 opacity-100" : "invisible -translate-y-3 opacity-0"
+        }`}
       >
         <div className="container-site flex min-h-full flex-col py-6">
           <div className="flex items-center justify-between">
@@ -87,7 +90,6 @@ export function NavbarPilula({ nome, logo, itens, whatsappHref, telefone, telefo
               onClick={fechar}
               className="grid size-12 place-items-center rounded-botao border border-linha"
               aria-label="Fechar menu"
-              autoFocus
             >
               <X className="size-6" />
             </button>

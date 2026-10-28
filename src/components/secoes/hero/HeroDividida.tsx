@@ -16,12 +16,21 @@ export function HeroDividida({ c, tom }: SecaoProps) {
   const segunda = c.galeria.fotos[0];
   return (
     <Secao id={ANCORAS.hero} tom={tom} espaco={false} className={`${espacoNavbar(c)} pb-20 md:pb-28`}>
-      <div className="container-site grid items-center gap-16 lg:grid-cols-[1.02fr_1fr] lg:gap-14">
+      {/* fundo com profundidade: luzes suaves, anel e detalhes da marca em camadas */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute right-[-8rem] bottom-8 size-[20rem] rounded-full bg-[color-mix(in_oklab,var(--acento)_9%,transparent)] blur-3xl sm:-top-24 sm:bottom-auto sm:-right-32 sm:size-[34rem] sm:bg-[color-mix(in_oklab,var(--acento)_10%,transparent)]" />
+        <div className="absolute -bottom-32 -left-24 hidden size-[26rem] rounded-full sm:block bg-[color-mix(in_oklab,var(--cor-destaque)_14%,transparent)] blur-3xl" />
+        <div className="absolute top-[22%] -right-40 hidden size-[30rem] rounded-full border-2 sm:block border-[color-mix(in_oklab,var(--acento)_9%,transparent)] lg:-right-24" />
+        <div className="absolute top-[30%] -right-24 hidden size-[21rem] rounded-full border sm:block border-[color-mix(in_oklab,var(--acento)_9%,transparent)] lg:-right-8" />
+        <Detalhe estilo={identidade.estilo} className="absolute bottom-6 left-[4%] hidden size-20 rotate-[-12deg] opacity-15 sm:block md:size-28" />
+        <Detalhe estilo={identidade.estilo} className="absolute top-28 right-[46%] hidden size-14 rotate-12 opacity-20 lg:block" />
+      </div>
+      <div className="container-site relative grid items-center gap-16 lg:grid-cols-[1.02fr_1fr] lg:gap-14">
         <div className="entrada relative">
           <Detalhe estilo={identidade.estilo} className="mb-6 size-12" />
           <h1 className="titulo t-1">{negocio.frase}</h1>
           <p className="t-lead medida mt-6 text-texto-suave">{negocio.descricao}</p>
-          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 sm:justify-start">
             <Botao href={linkWhatsapp(contato.whatsapp, contato.mensagemWhatsapp)} whatsapp grande>
               Chamar no WhatsApp
             </Botao>
@@ -44,8 +53,10 @@ export function HeroDividida({ c, tom }: SecaoProps) {
         </div>
 
         <div className="relative mx-auto w-full max-w-[33rem] pb-10 sm:pb-0 lg:mr-0">
-          <Forma estilo={identidade.estilo} className="absolute -bottom-10 -left-12 w-[62%] opacity-95 sm:-left-20" />
-          <div className="relative ml-auto aspect-[4/5] w-[86%]">
+          <Forma estilo={identidade.estilo} className="absolute -bottom-6 -left-8 w-[34%] opacity-90 sm:-left-14" />
+          {/* luz suave atrás da foto: a pessoa é o destaque, as formas só complementam */}
+          <div aria-hidden className="pointer-events-none absolute inset-x-[4%] top-[12%] aspect-square rounded-full bg-[color-mix(in_oklab,var(--cor-superficie)_92%,transparent)] blur-2xl" />
+          <div className="relative ml-auto aspect-[4/5] w-[94%]">
             <Foto foto={c.fotos.hero} recorte={identidade.recorte} prioridade sizes="(min-width: 1024px) 28rem, 80vw" />
           </div>
           {segunda && (
@@ -57,14 +68,14 @@ export function HeroDividida({ c, tom }: SecaoProps) {
             estilo={identidade.estilo}
             texto={identidade.seloTexto}
             icone={identidade.icone}
-            className="absolute -top-10 right-[-0.5rem] w-28 drop-shadow-xl sm:w-36 lg:-right-8 lg:w-40"
+            className="absolute -top-8 left-0 w-20 drop-shadow-xl sm:-top-8 sm:-right-2 sm:left-auto sm:w-28 lg:-right-6 lg:w-32"
           />
           {negocio.selo && (
             <Chip
               estilo={identidade.estilo}
               icone={identidade.icone}
               titulo={negocio.selo}
-              className="absolute top-[46%] -left-2 sm:-left-10"
+              className="absolute -bottom-4 left-0 sm:bottom-6 sm:-left-6"
             />
           )}
         </div>

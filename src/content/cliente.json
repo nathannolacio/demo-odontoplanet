@@ -1,259 +1,200 @@
 {
   "modoDemo": true,
   "pendencias": [
-    "Número de WhatsApp e telefone",
-    "Endereço completo",
-    "Nota e total de avaliações do Google",
-    "Fotos em alta resolução"
+    "Fotos reais da clínica, da equipe e do atendimento, sem texto sobreposto (as atuais são recortes de posts do Instagram)",
+    "Descrição do tratamento com laser e demais serviços (valores, faixa etária, como funciona a sedação)",
+    "Ano de abertura e outros números da clínica",
+    "Autorização da Dra. Paloma para usar fotos e avaliações no site",
+    "Galeria de fotos fora do site: faltam 4 a 8 fotos reais do consultório, da sala e dos brinquedos (sem texto sobreposto)",
+    "Seção Sobre com números (variação 2) fora do site: faltam 3 ou 4 números confirmados (ex.: ano de abertura, crianças atendidas)"
   ],
   "negocio": {
-    "nome": "Alecrim",
-    "segmento": "Empório e café",
-    "cidade": "Campinas-SP",
-    "frase": "Café coado, pão de fermentação natural e um balcão para ficar.",
-    "descricao": "Empório de bairro no Cambuí com cafés especiais, pães de longa fermentação e produtos de pequenos produtores do interior paulista.",
-    "selo": "Pão saindo do forno às 7h e às 16h"
+    "nome": "Odontoplanet",
+    "segmento": "Odontopediatria",
+    "cidade": "Caieiras-SP",
+    "frase": "Um universo de cuidado para o sorriso do seu filho",
+    "descricao": "Consultório de odontopediatria em Caieiras com atendimento de bebês a adolescentes, sedação infantil e laser, num ambiente pensado para criança gostar de vir.",
+    "selo": "Atendimento particular, sem convênios"
   },
   "identidade": {
-    "logo": "",
-    "recorte": "arco",
-    "estilo": "artesanal",
-    "icone": "Croissant",
-    "seloTexto": "Fermentação natural ✦ Cambuí ✦ Desde 2019 ✦",
+    "logo": "/cliente/logo-odontoplanet.png",
+    "recorte": "circulo",
+    "estilo": "geometrico",
+    "icone": "Smile",
+    "seloTexto": "Odontopediatria ✦ Odontoplanet ✦ Caieiras ✦",
     "origem": [
       {
-        "src": "/cliente/instagram/post-1.jpg",
-        "nota": "Verde-escuro da fachada e das embalagens virou a cor principal."
+        "src": "/cliente/instagram/perfil.png",
+        "nota": "O magenta do planeta-dente e da órbita virou a cor principal; o amarelo do 'ODONTO' virou o destaque."
       },
       {
-        "src": "/cliente/instagram/post-2.jpg",
-        "nota": "Amarelo-mostarda dos rótulos de geleia virou a cor de destaque."
+        "src": "/cliente/instagram/post-8.png",
+        "nota": "Planetas, foguetes e astronauta pediram formas geométricas e o tema espacial."
       },
       {
-        "src": "/cliente/instagram/post-3.jpg",
-        "nota": "Posts com letras grossas e arredondadas pediram uma fonte de título encorpada."
+        "src": "/cliente/instagram/post-1.png",
+        "nota": "O roxo do jaleco com planetas deu o tom escuro dos textos e do rodapé."
       },
       {
-        "src": "/cliente/instagram/post-4.jpg",
-        "nota": "As portas em arco do salão viraram o recorte das fotos."
+        "src": "/cliente/instagram/post-2.png",
+        "nota": "Rosa e azul-claro do ambiente lúdico pediram fontes arredondadas e cantos bem generosos."
       }
     ]
   },
   "contato": {
-    "whatsapp": "5519900000000",
-    "mensagemWhatsapp": "Olá! Vi o site do Alecrim e queria fazer um pedido.",
-    "telefone": "(19) 90000-0000",
-    "email": "",
-    "endereco": "Rua Exemplo, 123",
-    "bairroCidade": "Cambuí, Campinas-SP",
-    "mapsUrl": "",
+    "whatsapp": "5511943690214",
+    "mensagemWhatsapp": "Olá! Vi o site da Odontoplanet e gostaria de agendar uma avaliação para meu filho(a).",
+    "telefone": "(11) 94369-0214",
+    "email": "drapalomavillio@gmail.com",
+    "endereco": "Av. Prof. Carvalho Pinto, 220 - 1º andar",
+    "bairroCidade": "Centro, Caieiras-SP, 07700-210",
+    "mapsUrl": "https://maps.app.goo.gl/jgWy1bF1tUB8z5Vv6",
     "horarios": [
       {
-        "dias": "Terça a sexta",
-        "horas": "7h às 19h"
+        "dias": "Segunda a sexta",
+        "horas": "9h30 às 18h"
       },
       {
-        "dias": "Sábado",
-        "horas": "8h às 17h"
-      },
-      {
-        "dias": "Domingo",
-        "horas": "8h às 13h"
-      },
-      {
-        "dias": "Segunda",
+        "dias": "Sábado e domingo",
         "horas": "Fechado"
       }
     ]
   },
   "redes": {
     "instagram": {
-      "usuario": "alecrim.emporio",
-      "url": "https://instagram.com/"
+      "usuario": "odontoplanet.oficial",
+      "url": "https://www.instagram.com/odontoplanet.oficial/"
     },
     "facebook": "",
     "tiktok": ""
   },
   "fotos": {
     "hero": {
-      "src": "/cliente/hero.jpg",
-      "alt": "Balcão do Alecrim com pães sobre tábuas de madeira"
+      "src": "/cliente/hero-dra2.webp",
+      "alt": "Dra. Paloma de Villio sorrindo com um modelo de arcada dentária infantil"
     },
     "sobre": {
-      "src": "/cliente/sobre.jpg",
-      "alt": "Padeiro moldando massa de fermentação natural"
+      "src": null,
+      "alt": "Dra. Paloma de Villio atendendo uma criança"
     },
     "cta": {
-      "src": "/cliente/cta.jpg",
-      "alt": "Xícara de café coado sobre a mesa"
+      "src": null,
+      "alt": "Sala de atendimento da Odontoplanet"
     }
   },
   "sobre": {
-    "titulo": "Um empório de bairro, do jeito que a gente gosta de comprar",
-    "texto": "O Alecrim nasceu em 2019 de uma ideia simples: ter perto de casa o pão que a gente faria se tivesse tempo. A massa descansa por 36 horas, o café vem de dois sítios do sul de Minas e as prateleiras guardam queijos, geleias e mel de produtores que conhecemos pelo nome.",
-    "manifesto": "Pão que descansa, café que se coa sem pressa e gente que sabe o seu pedido.",
+    "titulo": "Transformar o medo de dentista em aventura",
+    "texto": "Na Odontoplanet, a Dra. Paloma de Villio cuida do sorriso de bebês, crianças e adolescentes com paciência, linguagem lúdica e respeito ao tempo de cada um. O atendimento é particular e personalizado.",
+    "manifesto": "Uma criança ouvida com paciência cresce sem trauma e descobre que ir ao dentista pode ser divertido.",
     "pilares": [
       {
-        "icone": "Wheat",
-        "titulo": "Fermentação natural",
-        "texto": "Massa-mãe própria e 36 horas de descanso antes do forno."
+        "icone": "Baby",
+        "titulo": "De bebê a adolescente",
+        "texto": "Atendimento especializado para cada fase do sorriso."
       },
       {
-        "icone": "Coffee",
-        "titulo": "Café de origem",
-        "texto": "Grãos de dois sítios do sul de Minas, torrados toda semana."
+        "icone": "Moon",
+        "titulo": "Sedação infantil",
+        "texto": "Mais conforto e tranquilidade para quem precisa."
       },
       {
         "icone": "HandHeart",
-        "titulo": "Pequenos produtores",
-        "texto": "Queijos, geleias e mel de quem a gente visita."
+        "titulo": "Cuidado individual",
+        "texto": "Atendimento particular e personalizado, sem convênios."
       }
     ],
-    "numeros": [
-      {
-        "valor": "2019",
-        "rotulo": "abrindo as portas no Cambuí"
-      },
-      {
-        "valor": "36h",
-        "rotulo": "de fermentação em cada pão"
-      },
-      {
-        "valor": "4,9",
-        "rotulo": "de nota no Google"
-      }
-    ]
+    "numeros": []
   },
   "servicos": {
-    "titulo": "Do forno, do coador e da prateleira",
-    "intro": "Tudo pode ser consumido no balcão ou levado para casa. Encomendas grandes pelo WhatsApp com um dia de antecedência.",
+    "titulo": "Cuidado para cada fase do sorriso",
+    "intro": "Agende a avaliação do seu pequeno astronauta pelo WhatsApp.",
     "itens": [
       {
-        "icone": "Croissant",
-        "nome": "Pães de fermentação natural",
-        "descricao": "Italiano, integral com sementes e o de azeitona que acaba antes do almoço.",
-        "preco": "",
-        "foto": {
-          "src": "/cliente/servico-1.jpg",
-          "alt": "Pães de fermentação natural na prateleira"
-        }
+        "icone": "Smile",
+        "nome": "Consulta de avaliação",
+        "descricao": "O primeiro passo para conhecer o sorriso da criança e planejar o cuidado."
       },
       {
-        "icone": "Coffee",
-        "nome": "Cafés especiais",
-        "descricao": "Coado, espresso e cold brew com grãos de origem, também vendidos em pacote.",
-        "preco": "",
-        "foto": {
-          "src": "/cliente/servico-2.jpg",
-          "alt": "Barista preparando café coado"
-        }
+        "icone": "Baby",
+        "nome": "Odontopediatria",
+        "descricao": "Atendimento especializado de bebês a adolescentes."
       },
       {
-        "icone": "Sandwich",
-        "nome": "Lanches e cafés da manhã",
-        "descricao": "Tostas, sanduíches no pão da casa e o café da manhã completo de fim de semana.",
-        "preco": "",
-        "foto": {
-          "src": "/cliente/servico-3.jpg",
-          "alt": "Tosta com queijo e tomate"
-        }
+        "icone": "Moon",
+        "nome": "Sedação infantil",
+        "descricao": "Atendimento sem traumas, com mais conforto para a criança."
       },
       {
-        "icone": "ShoppingBasket",
-        "nome": "Empório",
-        "descricao": "Queijos curados, geleias, mel e azeites de pequenos produtores do interior.",
-        "preco": "",
-        "foto": {
-          "src": "/cliente/servico-4.jpg",
-          "alt": "Prateleira com potes de geleia e mel"
-        }
-      },
-      {
-        "icone": "Gift",
-        "nome": "Cestas e encomendas",
-        "descricao": "Cestas de café da manhã para presente e pedidos para eventos.",
-        "preco": "",
-        "foto": {
-          "src": "/cliente/servico-5.jpg",
-          "alt": "Cesta de café da manhã montada"
-        }
+        "icone": "Zap",
+        "nome": "Laser",
+        "descricao": "Recurso a laser no atendimento odontológico infantil."
       }
     ]
   },
   "galeria": {
-    "titulo": "Um pouco do nosso dia",
-    "fotos": [
-      {
-        "src": "/cliente/galeria-1.jpg",
-        "alt": "Fachada do Alecrim pela manhã"
-      },
-      {
-        "src": "/cliente/galeria-2.jpg",
-        "alt": "Pães recém-saídos do forno"
-      },
-      {
-        "src": "/cliente/galeria-3.jpg",
-        "alt": "Mesa com café e bolo"
-      },
-      {
-        "src": "/cliente/galeria-4.jpg",
-        "alt": "Prateleiras do empório"
-      },
-      {
-        "src": "/cliente/galeria-5.jpg",
-        "alt": "Clientes conversando no balcão"
-      },
-      {
-        "src": "/cliente/galeria-6.jpg",
-        "alt": "Detalhe de croissant"
-      }
-    ]
+    "titulo": "Um pouco do universo Odontoplanet",
+    "fotos": []
   },
   "avaliacoes": {
-    "titulo": "O que dizem no Google",
+    "titulo": "O que as famílias dizem no Google",
     "nota": 4.9,
-    "total": 312,
-    "fonteUrl": "",
+    "total": 61,
+    "fonteUrl": "https://maps.app.goo.gl/jgWy1bF1tUB8z5Vv6",
     "itens": [
       {
-        "nome": "Mariana",
+        "nome": "Rosa",
         "nota": 5,
-        "texto": "O pão italiano é o melhor da região, e o atendimento faz a gente se sentir em casa. Virou parada obrigatória de sábado.",
-        "quando": "há 2 semanas"
+        "texto": "Meu filho permaneceu tranquilo durante todo o atendimento, sem qualquer sinal de desconforto ou trauma — algo raro em odontopediatria."
       },
       {
-        "nome": "Rafael",
+        "nome": "Micaela",
         "nota": 5,
-        "texto": "Café coado excelente e o pessoal explica de onde vem cada grão. Ambiente tranquilo para trabalhar um pouco.",
-        "quando": "há 1 mês"
+        "texto": "O meu filho perdeu o medo de ir ao dentista, na verdade ele anseia pelo dia da consulta!"
       },
       {
-        "nome": "Juliana",
+        "nome": "Maria Rita",
         "nota": 5,
-        "texto": "Encomendei uma cesta de café da manhã para minha mãe e chegou linda, tudo fresquinho.",
-        "quando": "há 1 mês"
+        "texto": "Muito atenciosa, explica cada procedimento, tira todas as dúvidas com clareza. Minha filha teve a melhor experiência com a Dra. Paloma."
       },
       {
-        "nome": "Carlos",
-        "nota": 4,
-        "texto": "Pães ótimos. Aos sábados enche, então vale chegar cedo.",
-        "quando": "há 2 meses"
+        "nome": "Jaqueline",
+        "nota": 5,
+        "texto": "Minha filha teve sua primeira consulta essa semana e ficou encantada, não queria ir embora do consultório. O ambiente é todo lúdico e acolhedor e a Dra. Paloma é muito atenciosa."
       },
       {
-        "nome": "Fernanda",
+        "nome": "Talitha",
         "nota": 5,
-        "texto": "A geleia de pimenta e o queijo canastra que eles vendem são imperdíveis.",
-        "quando": "há 3 meses"
+        "texto": "A Dra. Paloma é uma profissional excepcional! Cuidou do tratamento do Theo com muita paciência, carinho e atenção em cada detalhe."
+      },
+      {
+        "nome": "Bruna",
+        "nota": 5,
+        "texto": "A Dra.Paloma é uma profissional incrível, atenciosa e paciente. Recomendo muito, com ela meu filho perdeu o trauma de dentista."
+      },
+      {
+        "nome": "Taiane",
+        "nota": 5,
+        "texto": "Um ambiente acolhedor, a Doutora Paloma explica pra criança a função dos aparelhos, através desse ato a criança se sente confiante."
+      },
+      {
+        "nome": "Tayná",
+        "nota": 5,
+        "texto": "Minha filha não é uma paciente muito fácil e a dra cuida dos dentinhos dela com muito carinho e paciência."
+      },
+      {
+        "nome": "Raissa",
+        "nota": 5,
+        "texto": "Clinica acolhedora e humanizada. Profissional atenciosa e com muito domínio técnico."
       }
     ]
   },
   "cta": {
-    "titulo": "Encomende pelo WhatsApp e retire quentinho",
-    "texto": "Pedidos até as 18h saem no forno da manhã seguinte.",
-    "botao": "Fazer encomenda"
+    "titulo": "Agende a avaliação do seu pequeno astronauta",
+    "texto": "Fale com a gente pelo WhatsApp e embarque nessa missão.",
+    "botao": "Agendar pelo WhatsApp"
   },
   "layout": {
-    "navbar": 1,
+    "navbar": 3,
     "secoes": [
       {
         "tipo": "hero",
@@ -262,39 +203,34 @@
       },
       {
         "tipo": "sobre",
-        "variacao": 1,
-        "tom": "claro"
+        "variacao": 3,
+        "tom": "marca"
       },
       {
         "tipo": "servicos",
-        "variacao": 2,
-        "tom": "suave"
-      },
-      {
-        "tipo": "galeria",
         "variacao": 1,
         "tom": "claro"
       },
       {
         "tipo": "avaliacoes",
         "variacao": 3,
-        "tom": "marca"
+        "tom": "suave"
       },
       {
         "tipo": "localizacao",
-        "variacao": 1,
+        "variacao": 2,
         "tom": "claro"
       },
       {
         "tipo": "cta",
-        "variacao": 3,
-        "tom": "suave"
+        "variacao": 1,
+        "tom": "marca"
       }
     ],
     "rodape": {
-      "variacao": 3,
+      "variacao": 2,
       "tom": "escuro"
     },
-    "whatsappFlutuante": true
+    "whatsappFlutuante": false
   }
 }

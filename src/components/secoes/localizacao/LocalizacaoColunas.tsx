@@ -37,7 +37,7 @@ export function LocalizacaoColunas({ c, tom }: SecaoProps) {
               </li>
             )}
           </ul>
-          <div className="mt-9">
+          <div className="mt-9 flex justify-center md:justify-start">
             <Botao href={linkWhatsapp(contato.whatsapp, contato.mensagemWhatsapp)} whatsapp>
               Chamar no WhatsApp
             </Botao>

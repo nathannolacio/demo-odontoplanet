@@ -4,29 +4,29 @@
  */
 :root {
   /* Cores */
-  --cor-marca: #23432f;            /* cor principal da marca (logo, botões, faixas) */
-  --cor-marca-contraste: #f3f4ee;  /* texto sobre a cor principal */
-  --cor-fundo: #f3f4ee;            /* fundo do site */
-  --cor-superficie: #e2e8d8;       /* fundo alternativo de seções e cards */
-  --cor-tinta: #17231a;            /* texto principal */
-  --cor-tinta-suave: #4b5a4f;      /* texto secundário */
-  --cor-destaque: #e8b23a;         /* detalhes: estrelas, selos, sublinhados */
-  --cor-sobre-destaque: #17231a;   /* texto sobre a cor de destaque */
+  --cor-marca: #a3216b;            /* cor principal da marca (logo, botões, faixas) */
+  --cor-marca-contraste: #ffffff;  /* texto sobre a cor principal */
+  --cor-fundo: #fcf6fb;            /* fundo do site */
+  --cor-superficie: #f4e3f2;       /* fundo alternativo de seções e cards */
+  --cor-tinta: #2a1236;            /* texto principal */
+  --cor-tinta-suave: #5c4668;      /* texto secundário */
+  --cor-destaque: #f7d760;         /* detalhes: estrelas, selos, sublinhados */
+  --cor-sobre-destaque: #2a1236;   /* texto sobre a cor de destaque */
 
   /* Fontes (instaladas em src/styles/fontes.ts) */
-  --fonte-titulo: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
-  --fonte-texto: "Figtree Variable", ui-sans-serif, system-ui, sans-serif;
+  --fonte-titulo: "Baloo 2 Variable", ui-sans-serif, system-ui, sans-serif;
+  --fonte-texto: "Nunito Variable", ui-sans-serif, system-ui, sans-serif;
 
   /* Personalidade dos títulos */
-  --titulo-peso: 700;
-  --titulo-espacamento: -0.025em;
+  --titulo-peso: 800;
+  --titulo-espacamento: -0.01em;
   --titulo-caixa: none;            /* none | uppercase */
-  --titulo-entrelinha: 1.02;
+  --titulo-entrelinha: 1.05;
 
   /* Formas */
-  --raio-pequeno: 6px;
-  --raio: 14px;
-  --raio-grande: 28px;
+  --raio-pequeno: 10px;
+  --raio: 20px;
+  --raio-grande: 36px;
   --raio-botao: 999px;             /* 999px = pílula, 0 = reto */
-  --sombra: 0 18px 40px -24px rgb(23 35 26 / 0.45);
+  --sombra: 0 18px 40px -24px rgb(42 18 54 / 0.4);
 }
