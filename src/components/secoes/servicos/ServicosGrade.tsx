@@ -25,10 +25,10 @@ export function ServicosGrade({ c, tom }: SecaoProps) {
         <div className="absolute -top-20 -right-12 size-[14rem] rounded-full border border-[color-mix(in_oklab,var(--acento)_8%,transparent)] md:size-[20rem]" />
         <div className="absolute -bottom-40 -left-32 size-[22rem] rounded-full border-2 border-[color-mix(in_oklab,var(--acento)_8%,transparent)] md:size-[30rem]" />
         <Forma estilo={c.identidade.estilo} className="absolute -right-24 -bottom-20 w-72 opacity-[0.06] md:w-96" />
-        <Detalhe estilo={c.identidade.estilo} className="absolute top-8 right-[6%] size-12 rotate-12 opacity-25 md:top-14 md:size-16" />
-        <Detalhe estilo={c.identidade.estilo} className="absolute top-[34%] left-[2%] hidden size-14 -rotate-12 opacity-15 md:block" />
-        <Detalhe estilo={c.identidade.estilo} className="absolute bottom-6 left-[6%] size-14 rotate-[18deg] opacity-20 md:size-20" />
-        <Detalhe estilo={c.identidade.estilo} className="absolute right-[38%] bottom-8 hidden size-12 -rotate-6 opacity-15 lg:block" />
+        <Detalhe estilo={c.identidade.estilo} variante={4} className="absolute top-8 right-[6%] size-12 rotate-12 opacity-45 md:top-14 md:size-16" />
+        <Detalhe estilo={c.identidade.estilo} variante={1} className="absolute top-[34%] left-[2%] hidden size-14 -rotate-12 opacity-35 md:block" />
+        <Detalhe estilo={c.identidade.estilo} variante={3} className="absolute bottom-6 left-[6%] size-14 rotate-[18deg] opacity-40 md:size-20" />
+        <Detalhe estilo={c.identidade.estilo} variante={6} className="absolute right-[38%] bottom-8 hidden size-12 -rotate-6 opacity-35 lg:block" />
       </div>
       <div className="container-site relative">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">

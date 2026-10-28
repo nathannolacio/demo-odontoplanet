@@ -14,7 +14,7 @@ export type TipoSecao =
 
 export type Recorte = "reto" | "arco" | "circulo" | "pilula" | "blob" | "inclinado" | "folha";
 /** Linguagem dos elementos gráficos soltos (formas, detalhes, selo, etiquetas sobre fotos). */
-export type EstiloGrafico = "organico" | "geometrico" | "linear" | "artesanal" | "moderno";
+export type EstiloGrafico = "organico" | "geometrico" | "linear" | "artesanal" | "moderno" | "odonto";
 
 /** src = null quando o arquivo ainda não existe em /public (o site mostra um espaço reservado). */
 export type Foto = { src: string | null; alt: string };

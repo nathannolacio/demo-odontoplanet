@@ -18,8 +18,8 @@ export function CtaFaixa({ c, tom }: SecaoProps) {
         <div className="absolute -top-14 -right-10 size-[15rem] rounded-full border border-[color-mix(in_oklab,var(--cor-marca-contraste)_8%,transparent)] md:size-[22rem]" />
         <div className="absolute -bottom-40 left-[28%] size-[22rem] rounded-full bg-[color-mix(in_oklab,var(--cor-destaque)_13%,transparent)] blur-3xl" />
         <div className="absolute -bottom-24 -left-20 size-[16rem] rounded-full bg-[color-mix(in_oklab,var(--cor-marca-contraste)_6%,transparent)] blur-2xl" />
-        <Detalhe estilo={identidade.estilo} cor="var(--cor-destaque)" className="absolute top-6 right-[6%] size-14 rotate-12 opacity-30 md:size-20" />
-        <Detalhe estilo={identidade.estilo} cor="var(--cor-marca-contraste)" className="absolute right-[34%] bottom-5 hidden size-12 -rotate-12 opacity-15 md:block" />
+        <Detalhe estilo={identidade.estilo} variante={4} cor="var(--cor-destaque)" className="absolute top-6 right-[6%] size-14 rotate-12 opacity-50 md:size-20" />
+        <Detalhe estilo={identidade.estilo} variante={7} cor="var(--cor-marca-contraste)" className="absolute right-[34%] bottom-5 hidden size-12 -rotate-12 opacity-35 md:block" />
       </div>
       <div className="container-site relative flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <div>

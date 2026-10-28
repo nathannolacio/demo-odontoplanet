@@ -10,9 +10,13 @@ import { Icone } from "./Icone";
  *   linear     → traço fino, arcos e brilhos delicados
  *   artesanal  → carimbo, traço tremido, asteriscos desenhados à mão
  *   moderno    → grade técnica, sinais de mais, cantos retos
+ *   odonto     → dentes, escova, pasta, aparelho, espelho e sonda (e, para marcas com tema espacial, foguete e planeta)
  */
 
 type Base = { estilo: EstiloGrafico; className?: string; cor?: string };
+
+/** Contorno de um molar, no quadro 64x64 (usado pelo estilo odonto). */
+const DENTE = "M32 14c-3-3-7-5-12-4-7 1-11 7-10 15 1 7 4 11 5 18 1 8 2 15 6 15 5 0 4-14 11-14s6 14 11 14c4 0 5-7 6-15 1-7 4-11 5-18 1-8-3-14-10-15-5-1-9 1-12 4Z";
 
 const DESTAQUE = "var(--cor-destaque)";
 const TINTA = "var(--cor-tinta)";
@@ -82,11 +86,22 @@ export function Forma({ estilo, className = "", cor = "var(--acento)" }: Base) {
           </g>
         </svg>
       );
+    case "odonto":
+      return (
+        <svg {...comum}>
+          <path d={DENTE} fill="currentColor" transform="translate(-6 6) scale(3.9)" />
+          <path d="M62 82c0-18 12-32 30-34" fill="none" stroke="var(--cor-fundo)" strokeWidth="9" strokeLinecap="round" opacity=".55" />
+          <circle cx="206" cy="44" r="15" fill={DESTAQUE} />
+          <circle cx="226" cy="80" r="7" fill={DESTAQUE} />
+          <circle cx="24" cy="208" r="9" fill={DESTAQUE} />
+          <path d="M34 22c1.8 10 5 13.4 15 15-10 1.6-13.2 5-15 15-1.8-10-5-13.4-15-15 10-1.6 13.2-5 15-15Z" fill={TINTA} />
+        </svg>
+      );
   }
 }
 
 /** Detalhe pequeno: acompanha títulos, cartões e cantos. */
-export function Detalhe({ estilo, className = "", cor = "var(--acento)" }: Base) {
+export function Detalhe({ estilo, className = "", cor = "var(--acento)", variante = 0 }: Base & { variante?: number }) {
   const comum = { viewBox: "0 0 64 64", "aria-hidden": true, className: `pointer-events-none ${className}`, style: { color: cor } } as const;
   switch (estilo) {
     case "organico":
@@ -131,6 +146,103 @@ export function Detalhe({ estilo, className = "", cor = "var(--acento)" }: Base)
           <path d="M44 34v20M34 44h20" stroke={DESTAQUE} />
         </svg>
       );
+    case "odonto":
+      return <DetalheOdonto variante={variante} {...comum} />;
+  }
+}
+
+type SvgComum = { viewBox: string; "aria-hidden": true; className: string; style: { color: string } };
+
+/** Desenhos do consultório. `variante` escolhe qual aparece, para não repetir o mesmo dente em toda parte. */
+function DetalheOdonto({ variante, ...comum }: SvgComum & { variante: number }) {
+  const v = ((variante % 8) + 8) % 8;
+  switch (v) {
+    case 1: // escova
+      return (
+        <svg {...comum}>
+          <g transform="rotate(-40 32 32)">
+            <rect x="2" y="28" width="38" height="8" rx="4" fill="currentColor" />
+            <rect x="40" y="26" width="20" height="12" rx="3" fill="currentColor" />
+            {[43, 47.5, 52, 56.5].map((x) => (
+              <rect key={x} x={x} y="17" width="3" height="10" rx="1.5" fill={DESTAQUE} />
+            ))}
+          </g>
+        </svg>
+      );
+    case 2: // pasta de dente
+      return (
+        <svg {...comum}>
+          <g transform="rotate(35 32 32)">
+            <rect x="6" y="24" width="6" height="16" rx="1.5" fill="currentColor" />
+            <rect x="12" y="21" width="36" height="22" rx="5" fill="currentColor" />
+            <rect x="21" y="21" width="7" height="22" fill={DESTAQUE} />
+            <rect x="48" y="26" width="6" height="12" fill="currentColor" />
+            <rect x="54" y="27" width="6" height="10" rx="2.5" fill={DESTAQUE} />
+          </g>
+        </svg>
+      );
+    case 3: // aparelho
+      return (
+        <svg {...comum}>
+          {[3, 22, 41].map((x) => (
+            <rect key={x} x={x} y="18" width="19" height="30" rx="8" fill="currentColor" />
+          ))}
+          <path d="M0 33h64" stroke={TINTA} strokeWidth="3" />
+          {[7.5, 26.5, 45.5].map((x) => (
+            <rect key={x} x={x} y="27" width="10" height="12" rx="2.5" fill={DESTAQUE} stroke={TINTA} strokeWidth="1.6" />
+          ))}
+        </svg>
+      );
+    case 4: // dente feliz
+      return (
+        <svg {...comum}>
+          <path d={DENTE} fill="currentColor" />
+          <circle cx="24" cy="29" r="2.6" fill={TINTA} />
+          <circle cx="40" cy="29" r="2.6" fill={TINTA} />
+          <path d="M25 37c4 5 10 5 14 0" fill="none" stroke={TINTA} strokeWidth="2.6" strokeLinecap="round" />
+          <circle cx="20" cy="35" r="2.6" fill={DESTAQUE} />
+          <circle cx="44" cy="35" r="2.6" fill={DESTAQUE} />
+        </svg>
+      );
+    case 5: // espelho e sonda
+      return (
+        <svg {...comum}>
+          <path d="M30 30 56 56" stroke="currentColor" strokeWidth="4.5" strokeLinecap="round" />
+          <circle cx="22" cy="22" r="14" fill="currentColor" />
+          <circle cx="22" cy="22" r="8" fill={DESTAQUE} />
+          <path d="M8 56 38 26" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" fill="none" />
+          <path d="M38 26c4-4 10-4 14-1" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" fill="none" />
+        </svg>
+      );
+    case 6: // foguete (vem da logo)
+      return (
+        <svg {...comum}>
+          <g transform="rotate(40 32 32)">
+            <path d="M22 32 12 46h10ZM42 32l10 14H42Z" fill="currentColor" />
+            <path d="M32 4c8 8 11 19 10 34H22C21 23 24 12 32 4Z" fill="currentColor" />
+            <circle cx="32" cy="22" r="5" fill={DESTAQUE} />
+            <path d="M26 42q6 16 12 0Z" fill={DESTAQUE} />
+          </g>
+        </svg>
+      );
+    case 7: // planeta com anel
+      return (
+        <svg {...comum}>
+          <g transform="rotate(-20 32 32)">
+            <path d="M4 32a28 8 0 0 1 56 0" fill="none" stroke={DESTAQUE} strokeWidth="4" />
+            <circle cx="32" cy="32" r="14" fill="currentColor" />
+            <path d="M4 32a28 8 0 0 0 56 0" fill="none" stroke={DESTAQUE} strokeWidth="4" />
+          </g>
+        </svg>
+      );
+    default: // dente com brilho
+      return (
+        <svg {...comum}>
+          <path d={DENTE} fill="currentColor" />
+          <path d="M18 24c0-4 3-7 7-7" fill="none" stroke="var(--cor-fundo)" strokeWidth="3.2" strokeLinecap="round" opacity=".6" />
+          <path d="M50 4c.8 4.4 2.2 5.8 6.6 6.6-4.4.8-5.8 2.2-6.6 6.6-.8-4.4-2.2-5.8-6.6-6.6 4.4-.8 5.8-2.2 6.6-6.6Z" fill={DESTAQUE} />
+        </svg>
+      );
   }
 }
 
@@ -141,6 +253,7 @@ const SELO: Record<EstiloGrafico, { fundo: string; texto: string; aro?: { cor: s
   linear: { fundo: "var(--cor-fundo)", texto: TINTA, aro: { cor: TINTA }, miolo: "var(--cor-fundo)", corIcone: "var(--cor-marca)", caixa: false },
   artesanal: { fundo: "var(--cor-fundo)", texto: TINTA, aro: { cor: TINTA, traco: "2 5" }, miolo: DESTAQUE, corIcone: "var(--cor-sobre-destaque)", caixa: true },
   moderno: { fundo: TINTA, texto: "var(--cor-fundo)", miolo: "var(--cor-marca)", corIcone: "var(--cor-marca-contraste)", caixa: true },
+  odonto: { fundo: "var(--cor-marca)", texto: "var(--cor-marca-contraste)", miolo: DESTAQUE, corIcone: "var(--cor-sobre-destaque)", caixa: false },
 };
 
 /**
@@ -195,6 +308,7 @@ const CHIP: Record<EstiloGrafico, string> = {
   linear: "rounded-[var(--raio)] border border-[color-mix(in_oklab,var(--cor-tinta)_25%,transparent)] bg-[color-mix(in_oklab,var(--cor-fundo)_86%,transparent)] text-[var(--cor-tinta)] backdrop-blur-md px-4 py-2.5",
   artesanal: "rounded-[6px] border-[1.5px] border-dashed border-[var(--cor-tinta)] bg-[var(--cor-fundo)] text-[var(--cor-tinta)] -rotate-2 px-4 py-2.5",
   moderno: "rounded-[2px] bg-[var(--cor-tinta)] text-[var(--cor-fundo)] px-4 py-3",
+  odonto: "rounded-full bg-[var(--cor-fundo)] text-[var(--cor-tinta)] border-2 border-[var(--cor-destaque)] shadow-[0_14px_30px_-12px_rgb(0_0_0/0.35)] px-4 py-2.5",
 };
 
 /** Etiqueta solta que fica por cima de fotos (nota no Google, horário do forno, especialidade). */

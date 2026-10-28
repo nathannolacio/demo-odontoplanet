@@ -15,7 +15,7 @@ export function CtaCartao({ c, tom }: SecaoProps) {
       <div className="container-site">
         <div data-tom="marca" className="relative overflow-hidden rounded-grande px-6 pt-28 pb-16 text-center sm:px-12 md:py-24">
           <Forma estilo={identidade.estilo} cor="var(--cor-marca-contraste)" className="absolute -right-16 -bottom-20 w-64 opacity-15 md:w-96" />
-          <Detalhe estilo={identidade.estilo} className="absolute top-8 left-8 size-12 md:size-16" />
+          <Detalhe estilo={identidade.estilo} variante={6} className="absolute top-8 left-8 size-12 md:size-16" />
           <SeloCircular
             estilo={identidade.estilo}
             texto={identidade.seloTexto}

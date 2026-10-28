@@ -29,7 +29,7 @@ export function HeroVitrine({ c, tom }: SecaoProps) {
 
       <div className="container-site relative text-center">
         <div className="entrada mx-auto flex max-w-4xl flex-col items-center">
-          <Detalhe estilo={identidade.estilo} className="mb-6 size-12" />
+          <Detalhe estilo={identidade.estilo} variante={4} className="mb-6 size-12" />
           <h1 className="titulo t-1">{negocio.frase}</h1>
           <p className="t-lead mt-6 max-w-[54ch] text-texto-suave">{negocio.descricao}</p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-4">

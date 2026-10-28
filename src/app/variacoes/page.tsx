@@ -29,6 +29,7 @@ const ESTILOS: { id: EstiloGrafico; nome: string; nichos: string }[] = [
   { id: "geometrico", nome: "Geométrico", nichos: "escolas, academias, lojas infantis, agências, eventos" },
   { id: "linear", nome: "Linear", nichos: "clínicas, estética, odontologia, joalherias, advocacia" },
   { id: "artesanal", nome: "Artesanal", nichos: "confeitarias, cervejarias, ateliês, restaurantes de bairro" },
+  { id: "odonto", nome: "Odonto", nichos: "dentistas, odontopediatria, ortodontia, implantes e estética dental" },
   { id: "moderno", nome: "Moderno", nichos: "barbearias, estúdios de tatuagem, oficinas, tecnologia, arquitetura" },
 ];
 
@@ -81,6 +82,13 @@ export default function PaginaVariacoes() {
                   <div className="grid place-items-center">
                     <Chip estilo={e.id} icone="Star" titulo="4,9 no Google" texto="312 avaliações" />
                   </div>
+                  {e.id === "odonto" && (
+                    <div className="col-span-full flex flex-wrap items-center justify-center gap-6 pt-4">
+                      {[0, 1, 2, 3, 4, 5, 6, 7].map((n) => (
+                        <Detalhe key={n} estilo={e.id} variante={n} className="size-14" />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
               <Hero c={ce} tom="claro" />

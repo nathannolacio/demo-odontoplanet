@@ -32,7 +32,7 @@ export function SobreFoto({ c, tom }: SecaoProps) {
         </div>
 
         <div>
-          <Detalhe estilo={identidade.estilo} className="mb-6 size-11" />
+          <Detalhe estilo={identidade.estilo} variante={1} className="mb-6 size-11" />
           <h2 className="titulo t-2 max-w-[18ch]">{sobre.titulo}</h2>
           <p className="t-lead medida mt-7 text-texto-suave">{sobre.texto}</p>
           {sobre.pilares.length > 0 && (

@@ -19,7 +19,7 @@
   "identidade": {
     "logo": "/cliente/logo-odontoplanet.png",
     "recorte": "circulo",
-    "estilo": "geometrico",
+    "estilo": "odonto",
     "icone": "Smile",
     "seloTexto": "Odontopediatria ✦ Odontoplanet ✦ Caieiras ✦",
     "origem": [

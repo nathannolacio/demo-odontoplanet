@@ -13,7 +13,7 @@ export function SobreManifesto({ c, tom }: SecaoProps) {
     <Secao id={ANCORAS.sobre} tom={tom}>
       <div className="container-site">
         <div className="relative mx-auto max-w-5xl text-center">
-          <Detalhe estilo={identidade.estilo} className="mx-auto mb-10 size-16 md:size-20" />
+          <Detalhe estilo={identidade.estilo} variante={4}className="mx-auto mb-10 size-16 md:size-20" />
           <h2 className="sr-only">{sobre.titulo}</h2>
           <p className="titulo t-1 mx-auto max-w-[22ch]">{sobre.manifesto}</p>
           <p className="t-lead mx-auto mt-8 max-w-[56ch] text-texto-suave">{sobre.texto}</p>

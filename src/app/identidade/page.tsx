@@ -44,6 +44,7 @@ const ESTILOS: Record<string, string> = {
   linear: "linear (traço fino, arcos e brilhos)",
   artesanal: "artesanal (carimbo e traço desenhado à mão)",
   moderno: "moderno (grade técnica e cantos retos)",
+  odonto: "odontológico (dentes, escova, pasta, aparelho, espelho e sonda)",
 };
 
 export default function PaginaIdentidade() {

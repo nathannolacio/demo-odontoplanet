@@ -22,12 +22,12 @@ export function HeroDividida({ c, tom }: SecaoProps) {
         <div className="absolute -bottom-32 -left-24 hidden size-[26rem] rounded-full sm:block bg-[color-mix(in_oklab,var(--cor-destaque)_14%,transparent)] blur-3xl" />
         <div className="absolute top-[22%] -right-40 hidden size-[30rem] rounded-full border-2 sm:block border-[color-mix(in_oklab,var(--acento)_9%,transparent)] lg:-right-24" />
         <div className="absolute top-[30%] -right-24 hidden size-[21rem] rounded-full border sm:block border-[color-mix(in_oklab,var(--acento)_9%,transparent)] lg:-right-8" />
-        <Detalhe estilo={identidade.estilo} className="absolute bottom-6 left-[4%] hidden size-20 rotate-[-12deg] opacity-15 sm:block md:size-28" />
-        <Detalhe estilo={identidade.estilo} className="absolute top-28 right-[46%] hidden size-14 rotate-12 opacity-20 lg:block" />
+        <Detalhe estilo={identidade.estilo} variante={2} className="absolute bottom-6 left-[4%] hidden size-20 rotate-[-12deg] opacity-35 sm:block md:size-28" />
+        <Detalhe estilo={identidade.estilo} variante={5} className="absolute top-28 right-[46%] hidden size-14 rotate-12 opacity-40 lg:block" />
       </div>
       <div className="container-site relative grid items-center gap-16 lg:grid-cols-[1.02fr_1fr] lg:gap-14">
         <div className="entrada relative">
-          <Detalhe estilo={identidade.estilo} className="mb-6 size-12" />
+          <Detalhe estilo={identidade.estilo} variante={4} className="mb-6 size-12" />
           <h1 className="titulo t-1">{negocio.frase}</h1>
           <p className="t-lead medida mt-6 text-texto-suave">{negocio.descricao}</p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 sm:justify-start">
